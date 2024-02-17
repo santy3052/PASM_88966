@@ -1,0 +1,15 @@
+
+n=int(input('ingrese el numero de primos solicitada: '))
+a=1
+p=2
+L_primos= '1'
+while a <n:
+    for i in range(2,p+1):
+        primo=p%i
+        if primo==0 and p==i:
+            L_primos += str(f', {p}')
+            a+=1
+        elif primo==0 and p!=i:
+            break
+    p+=1
+print('primos: ',L_primos)

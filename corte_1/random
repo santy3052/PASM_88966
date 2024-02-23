@@ -1,0 +1,25 @@
+import random 
+
+def main():
+    lista=[]
+    decimales=[]
+    word=[]
+    for i in range(10):
+        n=random.randint(0,10)
+        d=round(random.uniform(0,10),2)
+        w=random.choice('esternocleidomastoideo')
+        decimales.append(d)
+        lista.append(n)
+        word.append(w)
+    return lista,decimales,word
+
+def sliding(listados):
+    for i in listados:
+        print(i)
+    for idx,val in enumerate(listados[1]):
+        print(f'indice: {idx}, valor: {val}')
+
+
+if __name__=='__main__':
+    listados=main()
+    sliding(listados)

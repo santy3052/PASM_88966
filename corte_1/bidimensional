@@ -1,0 +1,28 @@
+import random as rand
+
+def main():
+    rows=int(input('ingrese la cantidad de filas \n' ))
+    cols=int(input('ingrese la cantidad de columnas \n' ))
+    multi=int(input('ingrese el escalar \n' ))
+    matriz=[]
+    matriz2=[]
+    for i in range(rows):
+       matriz.append([])
+       for j in range(cols):
+           matriz[i].append([rand.randint(0,100)])
+    
+
+    for k in matriz:
+        print(k)
+
+    for idx,val in enumerate(matriz[1]):
+        matriz2.append([val*2])
+       
+           
+               
+    for k in matriz2:
+        print(matriz2)
+           
+
+if __name__=='__main__':
+    main()

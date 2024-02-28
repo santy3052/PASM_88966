@@ -1,0 +1,34 @@
+# datos={'nombre':['daniel','juan', 'mafe','laura'], 'codigo':[45322,16546546,1465467,3543545], 'carrera':'Mecatronica'}
+# cabecera=['nombre', 'codigo']
+# for idx,val in enumerate(datos):
+#     if val== 'carrera':
+#         continue
+#     txt='ingrese el '+cabecera[idx]+': '
+#     n=input(txt)
+#     datos[cabecera[idx]].append(n)
+
+# for i in range(len(datos['nombre'])):
+#     print(f'estudiante: {datos["nombre"][i]}, codigo: {datos["codigo"][i]}, carrera: {datos["carrera"]}')
+
+# datos = {'nombre':'julian', 'materia':'dispositivos'}
+# datos2= { 'materia':'dispositivos', 'nombre':'julian'}
+# print(datos==datos2)
+
+# personas={}
+# for i in range(3):
+#     n=input('ingrese un nombre ')
+#     if 'nombre' in personas:
+#         personas['nombre'].append(n)
+#     else:
+#         personas['nombre']=[n]
+#     print(personas)
+import random as r
+lista=[]
+n=r.randint(0,10)
+while n!=4:
+    lista.append(n)
+    print('pato')
+    n=r.randint(0,10)
+lista.append(n)
+print(lista)
+print('ganzo')
